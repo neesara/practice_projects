@@ -1,0 +1,17 @@
+##odd or even
+
+f = open ("value.txt",'r')
+
+n = f.read()
+
+n = n.strip().split("=")
+n = int(n[1])
+
+f.close()
+if ( n%2 == 0 ):
+  print ("Even number")
+else:
+  print ("Odd number")
+
+
+
