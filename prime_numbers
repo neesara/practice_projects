@@ -1,0 +1,17 @@
+
+def check_prime(n):
+  if ( n == 2 ):
+     return True
+  else:
+    for i in list:
+      if ( n % i == 0 ):
+         return False
+  return True
+
+
+if __name__ == '__main__':
+   list=[]
+   for i in range(2,20000):
+      if ( check_prime(i) == True ):
+        list.append(i)
+   print (list)
