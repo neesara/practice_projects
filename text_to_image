@@ -1,0 +1,14 @@
+from PIL import Image
+import os
+import logging
+import sys
+import pytesseract
+
+if (len(sys.argv[0:])) < 2  :
+   print ("Usage: %s path_to_image"%(sys.argv[0]))
+   exit() 
+path_to_image=sys.argv[1]
+if os.path.exists(path_to_image):
+    print(pytesseract.image_to_string(Image.open(path_to_image), lang='eng'))
+else:
+   logging.error("File does not exists")
