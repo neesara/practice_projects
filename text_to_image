@@ -1,3 +1,7 @@
+
+'''
+Neesara's python text extractor from an image
+'''
 from PIL import Image
 import os
 import logging
