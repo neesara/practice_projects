@@ -1,4 +1,9 @@
 
+"""
+Check prime number in a sequence of twenty thousand numbers
+
+"""
+
 def check_prime(n):
   if ( n == 2 ):
      return True
