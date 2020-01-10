@@ -1,3 +1,4 @@
+/* Program to count the number of bits with value 1 in given number*/
 #include<stdio.h>
 
 int main()

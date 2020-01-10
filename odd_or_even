@@ -1,4 +1,5 @@
 ##odd or even
+#Read a file value.txt which has n=somevalue and print whether n is odd or even
 
 f = open ("value.txt",'r')
 
