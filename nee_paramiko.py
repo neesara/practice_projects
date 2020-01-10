@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-'''
+"""
 Program to ssh to localhost and sleep 30 seconds
-'''
+"""
 import paramiko
 
 
