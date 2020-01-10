@@ -1,3 +1,5 @@
+/* Swap between first half and seconf half of a hexa-decimal number */
+
 #include<stdio.h>
 
 int main()

@@ -1,3 +1,4 @@
+#file handling in python
 file=open('Nee.txt','w')
 neethu_advice="Focus on your goals rather than comparing with others"
 neethu_advice += "Life is an exam where every one has a different question paper"
