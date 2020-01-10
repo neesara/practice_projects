@@ -1,3 +1,5 @@
 # practice_projects
 
-Interview questions and practice programs in C and python
+These project contains the practice programs I have written, few of them are interview questions I have faced.
+They are :
+Will update the list soon

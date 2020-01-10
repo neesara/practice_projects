@@ -5,7 +5,7 @@ Created on Sun Feb 17 11:16:29 2019
 
 @author: neethu
 
-String
+String - Find the number of occurance of each letter in a string
 """
 
 

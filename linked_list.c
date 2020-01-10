@@ -1,3 +1,5 @@
+/*Create and traverse a linked list in C */
+
 #include "stdio.h"
 #include "stdlib.h"
 
