@@ -1,0 +1,38 @@
+
+Git :
+
+git clone is like adding the project to your account so that u can access it easily
+git checkout is moving to a branch and it is like creating a local checkpoint(technically called reference)
+git checkout -b is creating a branch and moving to that branch
+commit - save checkpoint
+Commits are a particular type of checkpoint called a revision. The name will be a random-looking hash of numbers and letters such as e093542.
+That is really the core function of git: To save checkpoints (revisions) and share them with other people. Everything revolves around this concept.
+If you have ever created a checkpoint to something, you will be able to get back to it later as long as your .git folder is intact. It is magical.
+ You can use the -m flag as a shortcut to write a message. For example:
+
+git commit -m "Add a new feature"
+Push your branch to upload it somewhere else:
+git push origin <branch-name> => this will push ur branch as a new branch in git, you can merge it to master or some other repo with a PR
+
+In Git, "origin" is a shorthand name for the remote repository that a project was originally cloned from. More precisely, it is used instead of that original repository's URL - and thereby makes referencing much easier.
+
+git push origin master => Here origin represents the repository and master represents the branch
+git pull origin dev_branch => Pull changes from dev_branch to the current local branch
+for ur info : pull is fetch + merge
+
+Python venv  :
+
+In python3 it is python -m venv <path>
+Activate :
+<path>/Scripts/activate.bat or source <path>/Scripts/activate.bat for bash
+
+Deactivate :
+just type deactivate
+
+The folder has :
+bin: files that interact with the virtual environment
+include: C headers that compile the Python packages
+lib: a copy of the Python version along with a site-packages folder where each dependency is installed
+
+
+
