@@ -1,0 +1,45 @@
+PEP style excerpt from PEP 8 -- Style Guide for Python Code
+1) Readbility count, code is read much more often than it is written
+2) When in doubt, use your best judgment. Look at other examples and decide what looks best. And don't hesitate to  ask!
+3) Indentation - Use 4 spaces per indentation level.
+4) Space is preferred over tab
+5) Limit all lines to a maximum of 79 characters. (use \ backslash when needed)
+6) When you write long maths equations in new line start with the operator
+   eg: income = (gross_wages
+          + taxable_interest
+          + (dividends - qualified_dividends)
+          - ira_deduction
+          - student_loan_interest)
+7) Blank lines :- Surround top-level function and class definitions with two blank lines, Method definitions inside  a class are surrounded by a single  blank  line.
+8) Imports should usually be on separate lines, but can do : from subprocess import Popen, PIPE
+9) Module level Dunder names (i.e. names with two leading and two trailing underscores) should be placed after the  module docstring but before any import   statements except from __future__ imports
+10) Single-quoted strings and double-quoted strings are the same. This PEP does not make a recommendation for this.  Pick a rule and stick to it
+11) Avoid extraneous whitespace in the following situations:
+ yes : spam(ham[1], {eggs: 2}) and foo = (0,) and if x == 4: print x, y; x, y = y, xYes: spam(1)
+12) Always surround these binary operators with a single space on either side: assignment
+13) Function annotations should use the normal rules for colons and always have spaces around the -> arrow if  present 
+  def munge(input: AnyStr): ...
+  def munge() -> PosInt: ...
+14) Don't use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default  value for an unannotated function   parameter.
+15) Use inline comments sparingly.
+16) Write docstrings for all public modules, functions, classes, and methods. Docstrings are not necessary for  non-public methods, but you should have a   comment that describes what the method does. This comment should appear  after the def line.
+ eg : """Return a foobang
+
+ Optional plotz says to frobnicate the bizbaz first.
+ """
+17) Naming conventions :
+ ***Names to avoid :
+ Never use the characters 'l' (lowercase letter el), 'O' (uppercase letter oh), or 'I' (uppercase letter eye) as  single character variable names.
+ In some fonts, these characters are indistinguishable from the numerals one and zero. When tempted to use 'l', use  'L' instead.
+ ***Modules should have short, all-lowercase names. Underscores can be used in the module name if it improves  readability. Python packages should also have  short, all-lowercase names, although the use of underscores is  discouraged.
+ ***Class names should normally use the CapWords convention.
+ ***type variables introduced in PEP 484 should normally use CapWords preferring short names: T, AnyStr, Num
+ ***Because exceptions should be classes, the class naming convention applies here
+ ***Function names should be lowercase, with words separated by underscores as necessary to improve readability.
+ Variable names follow the same convention as function names.mixedCase is allowed only in contexts where that's  already the prevailing style (e.g.   threading.py), to retain backwards compatibility.
+ ***Function and Method Arguments : Always use self for the first argument to instance methods.
+ Always use cls for the first argument to class methods.
+ ***Constants : Constants are usually defined on a module level and written in all capital letters with underscores  separating words.
+
+To be continued....
+Source : https://www.python.org/dev/peps/pep-0008/
