@@ -34,5 +34,7 @@ bin: files that interact with the virtual environment
 include: C headers that compile the Python packages
 lib: a copy of the Python version along with a site-packages folder where each dependency is installed
 
+xpath learning website : http://pragmatictestlabs.com/2020/01/28/mastering-xpath-for-selenium-test-automation-engineers/
+
 
 
