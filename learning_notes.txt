@@ -1,3 +1,8 @@
+Robot - to be noted
+Key-word driven, behaviour driven and data driven
+Testcases are written using keyword style in a tabular format
+Robot integrated development environment - RIDE
+
 
 Git :
 
@@ -6,11 +11,11 @@ git checkout is moving to a branch and it is like creating a local checkpoint(te
 git checkout -b is creating a branch and moving to that branch
 commit - save checkpoint
 Commits are a particular type of checkpoint called a revision. The name will be a random-looking hash of numbers and letters such as e093542.
-That is really the core function of git: To save checkpoints (revisions) and share them with other people. Everything revolves around this concept.
-If you have ever created a checkpoint to something, you will be able to get back to it later as long as your .git folder is intact. It is magical.
+That’s really the core function of git: To save checkpoints (revisions) and share them with other people. Everything revolves around this concept.
+If you’ve ever created a checkpoint to something, you’ll be able to get back to it later as long as your .git folder is intact. It’s magical.
  You can use the -m flag as a shortcut to write a message. For example:
 
-git commit -m "Add a new feature"
+git commit -m “Add a new feature”
 Push your branch to upload it somewhere else:
 git push origin <branch-name> => this will push ur branch as a new branch in git, you can merge it to master or some other repo with a PR
 
@@ -18,10 +23,13 @@ In Git, "origin" is a shorthand name for the remote repository that a project wa
 
 git push origin master => Here origin represents the repository and master represents the branch
 git pull origin dev_branch => Pull changes from dev_branch to the current local branch
-for ur info : pull is fetch + merge
+for ur info : pull is fetch + merge, fetch will only fetch and store, it will not update to local branch, merge merges it
+Syntax of fetch :
+git fetch origin master  => here from origin repo master branch will be fetched
+git merge master => Here is master is the (remote)branch from which you are merging the updates to local branch in which you currently at in your local system.
+**Pro tip : Usually git commands deal with 2 targets, local and remote. Local target is where you are at when you issue the command(eg the branch where you are at when you execute the command from git bash). Since you are at it no need to mention it explicitly in a command, it is understood. The remote target is what you need to specify explicitly in the command.
 
-Python venv  :
-
+Python venv
 In python3 it is python -m venv <path>
 Activate :
 <path>/Scripts/activate.bat or source <path>/Scripts/activate.bat for bash
