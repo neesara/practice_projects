@@ -19,7 +19,7 @@ git commit -m “Add a new feature”
 Push your branch to upload it somewhere else:
 git push origin <branch-name> => this will push ur branch as a new branch in git, you can merge it to master or some other repo with a PR
 
-In Git, "origin" is a shorthand name for the remote repository that a project was originally cloned from. More precisely, it is used instead of that original repository's URL - and thereby makes referencing much easier.
+****In Git, "origin" is a shorthand name for the remote repository that a project was originally cloned from. More precisely, it is used instead of that original repository's URL - and thereby makes referencing much easier.
 
 git push origin master => Here origin represents the repository and master represents the branch
 git pull origin dev_branch => Pull changes from dev_branch to the current local branch
@@ -28,6 +28,9 @@ Syntax of fetch :
 git fetch origin master  => here from origin repo master branch will be fetched
 git merge master => Here is master is the (remote)branch from which you are merging the updates to local branch in which you currently at in your local system.
 **Pro tip : Usually git commands deal with 2 targets, local and remote. Local target is where you are at when you issue the command(eg the branch where you are at when you execute the command from git bash). Since you are at it no need to mention it explicitly in a command, it is understood. The remote target is what you need to specify explicitly in the command.
+
+git remote -v
+Upstream is needed for forking usually. Refer : https://www.atlassian.com/git/tutorials/git-forks-and-upstreams
 
 Python venv
 In python3 it is python -m venv <path>
@@ -41,6 +44,14 @@ The folder has :
 bin: files that interact with the virtual environment
 include: C headers that compile the Python packages
 lib: a copy of the Python version along with a site-packages folder where each dependency is installed
+
+Learning links :
+https://www.katacoda.com/  - For docker, Kubernetics, Git, Jenkins
+Jupyter notebook - For python
+https://www.youtube.com/playlist?list=PL6tu16kXT9PpKXQADb8AyJ1zHyp7xDHHo  - Kubernetes for Testers
+https://www.docker.com/blog/intro-guide-to-dockerfile-best-practices/
+https://cdk8s.io/ - Kubernetics
+
 
 
 
