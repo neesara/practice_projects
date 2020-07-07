@@ -32,6 +32,21 @@ git merge master => Here is master is the (remote)branch from which you are merg
 git remote -v
 Upstream is needed for forking usually. Refer : https://www.atlassian.com/git/tutorials/git-forks-and-upstreams
 
+**Pro tip :
+Basic git flow in normal work related needs :
+-------------------------
+git clone --branch the_source_branch my_git_url.git
+git status
+git checkout -b my_branch
+##Make your changes in the files
+git add .
+git status
+git commit -m "Message which explains your change"
+git push origin my_branch
+##After this you can go to your get web url and the create pull request (PR). ==> Need to see whether you can do this from CLI
+
+
+
 Python venv
 In python3 it is python -m venv <path>
 Activate :
@@ -51,6 +66,8 @@ Jupyter notebook - For python
 https://www.youtube.com/playlist?list=PL6tu16kXT9PpKXQADb8AyJ1zHyp7xDHHo  - Kubernetes for Testers
 https://www.docker.com/blog/intro-guide-to-dockerfile-best-practices/
 https://cdk8s.io/ - Kubernetics
+
+
 
 
 
