@@ -32,34 +32,16 @@ docker push neesara/todo-app
 docker run -dp 3000:3000 neesara/todo-app
 
 
-******************************************************************
-Learning SQL;
-SELECT * FROM table;
-SELECT name, value1 FROM table;
+1) Use case : You want to practice sql, but find it difficult to install mysql in your laptop, then how will you run it in docker :
+In windows after installing docker use powershell for docker commands :
+docker run --name=mysql1 -d mysql/enterprise-server:8.0 ==> This will pull sql image and start running it locally, -d means detached mode (run in background)
+docker logs mysql1    ====> Find password like this in this output "GENERATED ROOT PASSWORD: XXXXXXXXXX"
+docker exec -it mysql1 mysql -uroot -p   => Here use the above weird password and login, you will get sql console
+In SQL console type :  ALTER USER 'root'@'localhost' IDENTIFIED BY 'abc123'  => Here abc123 is the new password
+Now you can use mysql to enter your commands.
+After done for now enter : docker stop mysql1      => this will stop container but state will be preserved
+You can again login as : docker exec -it mysql1 mysql -uroot -p  ,and enter the password
 
-SELECT DISTINCT language FROM films;      => select all the unique values from a column, this might be useful if, for example, you're interested in knowing which languages are represented in the films table, DISTINCT qualifier refers to a unique row of data, not a unique column.
 
-To count :
-SELECT COUNT(*)
-FROM people;
-
-SELECT COUNT(DISTINCT birthdate)
-FROM people;
-FROM films;
-
-To get the column names written the way we want, we would write the query thus:
-SELECT animal_type AS Animal,
-       sex_upon_intake AS Sex,
-       age_upon_intake AS Age,
-       intake_condition AS Condition
-  FROM austin_animal_center_intakes
-
-you have to surround the replacement text with backticks. The backtick (`) is the keyboard character on the same key as the tilda (~)–not to be confused with the single quote character.
-eg : 
-SELECT animal_type AS `animal type`,
-       sex_upon_intake AS `sex upon intake`,
-       age_upon_intake AS `age upon intake`,
-       intake_condition AS `intake condition`
-  FROM austin_animal_center_intakes
 
 
