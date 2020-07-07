@@ -1,5 +1,5 @@
 PEP style excerpt from PEP 8 -- Style Guide for Python Code
-1) Readbility count, code is read much more often than it is written
+1) Readbility counts, code is read much more often than it is written
 2) When in doubt, use your best judgment. Look at other examples and decide what looks best. And don't hesitate to  ask!
 3) Indentation - Use 4 spaces per indentation level.
 4) Space is preferred over tab
