@@ -37,15 +37,13 @@ Basic git flow in normal work related needs :
 -------------------------
 git clone --branch the_source_branch my_git_url.git
 git status
-git checkout -b my_branch
+git checkout -b my_branch   ==> this will create a new branch for you to make changes
 ##Make your changes in the files
 git add .
 git status
 git commit -m "Message which explains your change"
 git push origin my_branch
 ##After this you can go to your get web url and the create pull request (PR). ==> Need to see whether you can do this from CLI
-
-
 
 Python venv
 In python3 it is python -m venv <path>
@@ -66,6 +64,9 @@ Jupyter notebook - For python
 https://www.youtube.com/playlist?list=PL6tu16kXT9PpKXQADb8AyJ1zHyp7xDHHo  - Kubernetes for Testers
 https://www.docker.com/blog/intro-guide-to-dockerfile-best-practices/
 https://cdk8s.io/ - Kubernetics
+
+Shell, grep :
+Use options -B <no. of lines> -A <no. of lines> to print that many lines before or after the matching pattern.
 
 
 
