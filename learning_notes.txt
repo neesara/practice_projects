@@ -6,7 +6,7 @@ Robot integrated development environment - RIDE
 
 Git :
 
-git clone is like adding the project to your account so that u can access it easily
+git fork is like adding the project to your account so that u can access it easily
 git checkout is moving to a branch and it is like creating a local checkpoint(technically called reference)
 git checkout -b is creating a branch and moving to that branch
 commit - save checkpoint
@@ -66,7 +66,16 @@ https://www.docker.com/blog/intro-guide-to-dockerfile-best-practices/
 https://cdk8s.io/ - Kubernetics
 
 Shell, grep :
+
+Grep N lines after a match
+grep -A <N> "string" FILENAME
+Here A is after and use B for before
 Use options -B <no. of lines> -A <no. of lines> to print that many lines before or after the matching pattern.
+
+***find  with rm for deleting logs older than 1 day***
+
+find . -name '*.log' -mtime +1 -exec rm {} \;
+
 
 
 
