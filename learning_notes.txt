@@ -79,6 +79,16 @@ Use options -B <no. of lines> -A <no. of lines> to print that many lines before 
 
 find . -name '*.log' -mtime +1 -exec rm {} \;
 
+Spin up sql docker container :
+*********************************
+1) Login to docker palyground.
+User : neesara
+2) docker login
+3) docker pull mysql
+4) docker run --name my_test -e MYSQL_ROOT_PASSWORD=abc123 -d mysql
+Here --name is name of container , -d is background mode
+5) docker exec -it my_test /bin/bash
+6) mysql -uroot -pabc123
 
 
 
