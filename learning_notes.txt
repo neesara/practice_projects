@@ -61,8 +61,9 @@ or git restore --staged filename
 
 To remove changes from remote :
 git reset --mixed HEAD~1  ==> move to working area
-git reset --mixed HEAD~1  ==> move to staging area
-git reset --mixed HEAD~1  ==> Discard changes
+git reset --soft HEAD~1  ==> move to staging area
+git reset --hard HEAD~1  ==> Discard changes
+Default(if no option specified) will mixed mode.
 
 Python venv
 In python3 it is python -m venv <path>
