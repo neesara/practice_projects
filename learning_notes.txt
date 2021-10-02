@@ -11,11 +11,11 @@ git checkout is moving to a branch and it is like creating a local checkpoint(te
 git checkout -b is creating a branch and moving to that branch
 commit - save checkpoint
 Commits are a particular type of checkpoint called a revision. The name will be a random-looking hash of numbers and letters such as e093542.
-Thatís really the core function of git: To save checkpoints (revisions) and share them with other people. Everything revolves around this concept.
-If youíve ever created a checkpoint to something, youíll be able to get back to it later as long as your .git folder is intact. Itís magical.
+That‚Äôs really the core function of git: To save checkpoints (revisions) and share them with other people. Everything revolves around this concept.
+If you‚Äôve ever created a checkpoint to something, you‚Äôll be able to get back to it later as long as your .git folder is intact. It‚Äôs magical.
  You can use the -m flag as a shortcut to write a message. For example:
 
-git commit -m ìAdd a new featureî
+git commit -m ‚ÄúAdd a new feature‚Äù
 Push your branch to upload it somewhere else:
 git push origin <branch-name> => this will push ur branch as a new branch in git, you can merge it to master or some other repo with a PR
 
@@ -44,6 +44,9 @@ git status
 git commit -m "Message which explains your change"
 git push origin my_branch
 ##After this you can go to your get web url and the create pull request (PR). ==> Need to see whether you can do this from CLI
+
+Merge conflicts :
+When you get merge conflicts manually edit the file and then push it again.
 
 Python venv
 In python3 it is python -m venv <path>
