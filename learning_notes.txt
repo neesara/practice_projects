@@ -31,6 +31,8 @@ git merge master => Here is master is the (remote)branch from which you are merg
 
 git remote -v
 Upstream is needed for forking usually. Refer : https://www.atlassian.com/git/tutorials/git-forks-and-upstreams
+git remote add origin <repo.git>
+git remove origin
 
 **Pro tip :
 Basic git flow in normal work related needs :
@@ -47,6 +49,20 @@ git push origin my_branch
 
 Merge conflicts :
 When you get merge conflicts manually edit the file and then push it again.
+
+Removing changes from working directory, staging area and remote repo
+To remove changes from working directory :
+git checkout .
+or git restore .
+
+To remove changes from staging area :
+git reset HEAD filename (instead of filename you can put . also)
+or git restore --staged filename
+
+To remove changes from remote :
+git reset --mixed HEAD~1  ==> move to working area
+git reset --mixed HEAD~1  ==> move to staging area
+git reset --mixed HEAD~1  ==> Discard changes
 
 Python venv
 In python3 it is python -m venv <path>
