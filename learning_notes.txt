@@ -107,6 +107,22 @@ Here --name is name of container , -d is background mode
 5) docker exec -it my_test /bin/bash
 6) mysql -uroot -pabc123
 
+Python requests package:
+REST APIs can provide methods to enable full Create, Read, Update, and Delete (CRUD) functionality. Here are common methods most REST APIs provide:
+GET – Retrieve data
+PUT – Replace data (to change the state of or update a resource)
+POST – Create data
+DELETE – Delete data
+
+Http response codes :
+1XX - information
+2XX - Successful (eg: 200)
+3XX - Redirection, client may need to make additional requests
+4XX - Client side issues (lack of authorization, forbidden access, disallowed methods, or attempts to access nonexistent resources)
+5XX - Server side issues
+
+
+
 
 
 
