@@ -121,6 +121,12 @@ Http response codes :
 4XX - Client side issues (lack of authorization, forbidden access, disallowed methods, or attempts to access nonexistent resources)
 5XX - Server side issues
 
+Setup json viewer in notepad ++
+----------------------------------
+Download the plugin from source forge, extract it, you will get a .dll file.
+Now go to Notepad++/Plugins folder, create a folder there in same name as that of .dll file and copy the .dll file inside it.
+Now for using the plugin go to notepad++ => select the text => plugins => format json 
+
 
 
 
